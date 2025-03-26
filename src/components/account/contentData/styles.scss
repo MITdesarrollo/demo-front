@@ -1,0 +1,38 @@
+@import '../../../styles/global';
+
+.accountPage_content_allData {
+  display: flex;
+  flex-direction: column;
+
+  .allData {
+    width: 720px;
+    background-color: $ultraWhite;
+    margin-bottom: 23px;
+    padding-bottom: 84px;
+
+    .allData_title {
+      padding: 21px;
+      color: $soft-black;
+      letter-spacing: 1px;
+      font-family: var(--font-poppins);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .allData_reciverSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 332px;
+
+      h3 {
+        color: $border-check;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-family: var(--font-poppins);
+      }
+    }
+  }
+}

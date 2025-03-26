@@ -1,0 +1,42 @@
+@import '../../../styles/global';
+
+.openDreamon_Open,
+.openDreamon_Close {
+  width: 162px;
+  height: 34px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  margin-right: 40px;
+
+  p {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    color: $link;
+    border: 1px solid $link;
+
+    .openDreamonIcon_Open {
+      color: $link;
+    }
+
+    p {
+      color: $link;
+    }
+  }
+
+  .openDreamonText_Open,
+  .openDreamonIcon_Open {
+    color: $soft-black;
+    font-family: var(--font-poppins);
+  }
+}
+
+.openDreamon_Close {
+  border: 1px solid $white;
+}

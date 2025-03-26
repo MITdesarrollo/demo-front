@@ -1,0 +1,29 @@
+@import '../../styles/global';
+
+.contenInfoSection {
+  // border-top: 2px solid $border;
+  border-bottom: 2px solid $border;
+
+  .sectionInfo {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .sectionInfo_title {
+      color: $soft-black;
+      margin-left: 19.07px;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: var(--font-poppins);
+      letter-spacing: 1px;
+    }
+
+    .sectionInfo_left {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

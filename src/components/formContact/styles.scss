@@ -1,0 +1,86 @@
+@import '../../styles/global';
+
+.contentContactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+}
+
+@media (min-width: 0px) and (max-width: 1120px) {
+  .contentContactContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.informationContactContainer {
+  width: 100%;
+  padding: 100px 0px;
+  display: flex;
+
+  span {
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-16);
+    color: $soft-black;
+    font-weight: 400!important;
+    letter-spacing: 1px!important;
+  }
+
+  .spanContact{
+    font-family: var(--font-poppins);
+    font-weight: 500!important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1120px) {
+  .informationContactContainer {
+    width: 100%;
+    padding: 0px 30px !important;
+  }
+}
+
+.formContactContainer {
+  width: 100%;
+  background-color: #ffff;
+  padding: 50px;
+  .spanForm{
+    line-height: 1.7;
+    font-family: var(--font-raleway);
+    font-size: 16px;
+  }
+}
+
+.faqLink {
+  color: $bg-error;
+  text-decoration: none;
+
+  &:hover {
+    color: $link;
+  }
+}
+
+.inputContainer {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .inputText {
+    width: 100% !important;
+    font-family: var(--font-poppins);
+    background-color: $white;
+    height: 43px;
+    border: none;
+    margin-bottom: 13px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &::input {
+      width: 100%;
+    }
+  }
+}

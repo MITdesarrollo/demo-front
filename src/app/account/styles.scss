@@ -1,0 +1,90 @@
+@import '../../styles/global';
+
+.accountPage {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .accountPage_slice {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 40px;
+
+    .accountPage_slice_perfil {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-family: var(--font-poppins);
+        font-size: 30px;
+        font-weight: 400;
+      }
+    }
+
+    .perfilImg {
+      display: flex;
+      border-radius: 50%;
+      background-color: $gray_01;
+
+      .perfilImg_avatar {
+        border-radius: 50%;
+      }
+
+      .perfilImg_avatar_progress {
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .perfilImg_avatar_notProgress {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: -10%;
+        background-color: lightgray;
+        border-radius: 50%;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .accountPage_content {
+    width: 1088px;
+    margin: 111px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .perfilData {
+    background-color: $ultraWhite;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accountPage {
+    .accountPage_content {
+      margin: 0 0 54pt 0;
+    }
+    .perfilData {
+      margin: 50px 0;
+    }
+  }
+}

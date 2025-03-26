@@ -1,0 +1,141 @@
+@import '../../styles/global';
+
+.cart {
+  padding-top: 208px;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-poppins);
+
+  // add media query for mobile
+  @media (max-width: 768px) {
+    padding-top: 110px;
+  }
+
+  .cart_info {
+    padding: 10px;
+    width: 100%;
+    max-width: 560px;
+    background-color: $beige;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .cart_infoExclamation {
+      width: 24px;
+      height: 24px;
+      background-color: $link;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h3 {
+      letter-spacing: 0;
+      font-weight: 400;
+      font-size: var(--font-size-16);
+    }
+  }
+
+  .cart_content_head {
+    width: 100%;
+    margin-bottom: 66px;
+
+    .cart_content_userAviable {
+      display: flex;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      .infoLeft {
+        @media (max-width: 768px) {
+          display: none
+        }
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        color: $soft-black;
+      }
+
+      .userAviable_back,
+      .userAviable_title,
+      .userAviable_info01,
+      .userAviable_info02 {
+        color: $soft-black;
+        font-family: var(--font-poppins);
+      }
+
+      .userAviable_title {
+        font-weight: 500;
+        font-family: var(--font-poppins);
+
+        //add media query for mobile
+        @media (max-width: 768px) {
+          font-size: 20px;
+          white-space: nowrap;
+          padding-top: 10px;
+        }
+      }
+
+      .userAviable_info01,
+      .userAviable_info02 {
+        font-weight: 500;
+        font-family: var(--font-poppins);
+      }
+
+      .userAviable_back {
+        font-weight: 400;
+        margin-left: 5px;
+      }
+
+      .userAviable_back,
+      .userAviable_info01,
+      .userAviable_info02 {
+        font-size: 11px;
+        font-family: var(--font-poppins);
+        color: $soft-black!important;
+      }
+
+      .userAviable_info01 {
+        @media (max-width: 768px) {
+          text-align: end;
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .info_001 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .userAviable_info01 {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .cart_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.userAviable_back {
+  font-family: var(--font-poppins);
+}

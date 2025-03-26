@@ -1,0 +1,41 @@
+@import '../../../../styles/global';
+
+.reciber_card {
+  width: 100%;
+  background-color: $ultraWhite;
+  padding: 30px 21px;
+
+  .reciber_card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+
+    .reciber_card_content_title {
+      color: $soft-black;
+      font-family: var(--font-poppins);
+      font-weight: 500;
+    }
+
+    .reciber_card_content_input {
+      width: 100%;
+      height: 34px;
+      padding-left: 10px;
+      border: 1px solid $bg-error;
+      font-family: var(--font-raleway);
+    }
+
+    .reciber_card_content_input::placeholder {
+      color: $gray;
+    }
+
+    .reciber_card_content_info {
+      color: $bg-error;
+      font-size: 11px;
+      cursor: pointer;
+      font-family: var(--font-raleway);
+      font-weight: 500;
+    }
+  }
+}

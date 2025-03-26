@@ -1,0 +1,31 @@
+@import '../../../../styles/global';
+
+.cartHeader {}
+
+.cartHeaderList {
+  margin-top: 5px;
+  background-color: $ultraWhite;
+  padding: 20px 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .cartHeaderList_cartItems {
+    border-bottom: 1px solid $border-two;
+    margin-bottom: 20px;
+  }
+
+  .infoCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    p {
+      color: $soft-black;
+      font-size: 11px;
+      font-family: var(--font-poppins);
+      font-weight: 500;
+    }
+  }
+}

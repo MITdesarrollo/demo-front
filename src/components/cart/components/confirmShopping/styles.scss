@@ -1,0 +1,29 @@
+@import '../../../../styles/global';
+
+.confirmShopping {
+
+  .confirmShopping_subTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    p {
+      color: $soft-black;
+      font-family: var(--font-poppins);
+      font-weight: 500;
+    }
+  }
+
+  .confirmShopping_userPanel {
+    width: 100%;
+    color: $soft-black;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+
+  .confirmShopping_alsoLike {
+    margin-bottom: 100px;
+  }
+}

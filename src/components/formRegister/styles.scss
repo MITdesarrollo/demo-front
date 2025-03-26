@@ -1,0 +1,223 @@
+@import '../../styles/global';
+
+.registerUser {
+  width: 420px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: $white;
+  font-family: var(--font-poppins);
+
+  .logoDreamon {
+    margin-bottom: 45.42px;
+  }
+
+  .title {
+    color: $white;
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 15px 0 23.86px 0;
+  }
+
+  .subTitle {
+    font-family: var(--font-raleway);
+    font-size: 11px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .inputContainer {
+    .inputNombreCompleto,
+    .inputEmailPhone {
+      position: relative;
+      width: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // display: flex;
+      flex-direction: row;
+
+      .inputNombre,
+      .inputApellido,
+      .inputEmail,
+      .inputPhone {
+        background-color: $bg-input;
+        width: 48%;
+        height: 43px;
+        border: none;
+        margin-bottom: 13px;
+        color: $white;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .inputNombre::placeholder,
+  .inputApellido::placeholder,
+  .inputEmail::placeholder,
+  .inputPass::placeholder,
+  .inputPassVerification::placeholder,
+  .inputPhone::placeholder {
+    color: $white;
+  }
+
+  .inputSetPass {
+    position: relative;
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+
+    .inputPass,
+    .inputPassVerification {
+      background-color: $bg-input;
+      width: 48%;
+      height: 43px;
+      border: none;
+      margin-bottom: 13px;
+      color: $white;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+
+  .passwordToggle1 {
+    position: absolute;
+    top: 39%;
+    right: 227px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .passwordToggle2 {
+    position: absolute;
+    top: 39%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .btnEnter {
+    width: 420px;
+    height: 43px;
+    background: $gradient-primary;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    margin: 21px 0 13px 0;
+  }
+
+  .register {
+    font-size: 11px;
+  }
+
+  // .errorContainer {
+  //   width: 183px;
+  //   height: 29px;
+  //   background-color: $bg-error;
+  //   position: absolute;
+  //   top: 6px;
+  //   right: -192px;
+  //   pointer-events: none;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+
+  //   .error {
+  //     color: $white;
+  //     font-size: 11px;
+  //   }
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  .registerUser {
+    width: 341px;
+
+    .title {
+      font-size: 16pt;
+      margin-bottom: 24px;
+    }
+
+    .separator {
+      width: 420px;
+      flex-direction: column;
+    }
+
+    .subTitle {
+      font-size: 11pt;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .inputContainer {
+      .inputNombreCompleto,
+      .inputEmailPhone {
+        width: 100%;
+        flex-direction: column;
+
+        .inputNombre,
+        .inputApellido,
+        .inputEmail,
+        .inputPhone {
+          width: 100%;
+        }
+      }
+    }
+
+    .inputSetPass {
+      width: 100%;
+      flex-direction: column;
+
+      .inputPass,
+      .inputPassVerification {
+        width: 100%;
+      }
+
+      .inputPassContainer {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .inputPass {
+          flex: 1;
+          background-color: $bg-input;
+          height: 43px;
+          border: none;
+          margin-bottom: 13px;
+          color: $white;
+          padding: 10px;
+          box-sizing: border-box;
+
+          ::placeholder {
+            color: $white;
+          }
+        }
+
+        .passwordToggle1,
+        .passwordToggle2 {
+          right: 10px;
+        }
+      }
+    }
+
+    .btnEnter {
+      width: 100%;
+    }
+
+    .register {
+      font-size: 14px;
+    }
+  }
+}

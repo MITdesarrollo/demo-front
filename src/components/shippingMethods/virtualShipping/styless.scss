@@ -1,0 +1,17 @@
+@import '../../../styles/global';
+
+.virtualShipping {
+  margin-bottom: 12px;
+
+  .virtualShipping_checkbox {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+
+    .virtualShipping_checkbox_infoText {
+      font-size: 11px;
+      color: $bg-error;
+      font-family: var(--font-family-popp);
+    }
+  }
+}

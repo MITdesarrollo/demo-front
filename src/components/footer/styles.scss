@@ -1,0 +1,56 @@
+@import '../../styles/global';
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $soft-black;
+  width: 100%;
+  height: 431px;
+  padding-left: 139px;
+  padding-right: 139px;
+}
+
+.footerInfo {
+  width: 200px;
+  height: 50%;
+
+  .title {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    letter-spacing: 1.66px;
+    color: $title;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+.infoText {
+  font-size: 11px;
+  color: $gray_01;
+  list-style: none;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+
+  .linkText {
+    text-decoration: none;
+    color: $gray_01;
+    font-family: var(--font-raleway);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.22px;
+  }
+
+  .linkText:hover {
+    color: $link;
+  }
+}
+
+.infoText.withBorder {
+  border-bottom: 1px solid $border;
+  padding-bottom: 12px;
+}
+
+.linkDreamon {
+  color: $link;
+}

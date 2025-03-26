@@ -1,0 +1,48 @@
+@import '../../../styles/global';
+
+.userDataMobile {
+  width: 100%;
+  min-height: 356pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .userDataMobile_section {
+    width: 100%;
+    background-color: $ultraWhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 356pt;
+    margin-bottom: 54px;
+
+    .userDataMobile_tittle {
+      font-size: 18pt;
+      color: $black-hard;
+      font-family: var(--font-poppins);
+      font-weight: 500;
+    }
+
+    .userDataMobile_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .userDataMobile_content_info {
+        text-align: center;
+        margin: 53px 0;
+
+        h3 {
+          width: 230pt;
+          font-size: 16pt;
+          color: $border-check;
+          font-weight: 500;
+          font-family: var(--font-poppins);
+        }
+      }
+    }
+  }
+}

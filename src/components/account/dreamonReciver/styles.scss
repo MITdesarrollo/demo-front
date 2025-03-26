@@ -1,0 +1,104 @@
+@import '../../../styles/global';
+
+.dreamonReciver {
+  padding: 21px 0;
+  margin: 0 23px;
+}
+
+.dreamonReciver_section {
+  width: 100%;
+  height: 134.31px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .dreamonReciver_image {
+    background-color: $gray;
+    min-width: 220px;
+    height: 134.31px;
+  }
+
+  .dreamonReciver_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 21px;
+    font-family: var(--font-poppins);
+
+    .dreamonReciver_info_title {
+      color: $soft-black;
+      font-family: var(--font-poppins);
+      letter-spacing: normal;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .dreamonReciver_info_capacity,
+    .dreamonReciver_info_location,
+    .dreamonReciver_info_calendary,
+    .dreamonReciver_info_gift,
+    .dreamonReciver_info_interactive {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // justify-content: space-between;
+
+      p {
+        color: $soft-black;
+        font-size: 11px;
+        margin-left: 3px;
+      }
+
+      .interactive {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+        cursor: pointer;
+
+        .interactive_icon {
+          color: $bg-error;
+        }
+
+        p {
+          color: $bg-error;
+          font-size: 11px;
+          margin-left: 3px;
+        }
+      }
+
+      .interactive:hover {
+        .interactive_icon {
+          color: $link;
+        }
+
+        p {
+          color: $link;
+        }
+      }
+    }
+
+    .dreamonReciver_info_location {
+      p {
+        color: $bg-error;
+        margin-left: 3px;
+      }
+    }
+  }
+}
+
+.dreamonReciver_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  p {
+    font-size: 11px;
+    font-family: var(--font-poppins);
+    letter-spacing: normal;
+  }
+}

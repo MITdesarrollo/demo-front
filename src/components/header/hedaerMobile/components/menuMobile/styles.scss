@@ -1,0 +1,107 @@
+@import '../../../../../styles/global';
+
+.menuMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 110px 0;
+  padding: 10pt 0;
+  background-color: $ultraWhite;
+
+  .menuMobile_section {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $ultraWhite;
+    padding-left: 30pt;
+
+    .menuMobile_map {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 50pt 0;
+
+      .menuMobile_Content {
+        cursor: pointer;
+        width: 90%;
+        height: 40pt;
+        line-height: 19pt;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      .menuMobile_UL {
+        padding-left: 10pt;
+        list-style: none;
+        line-height: 36pt;
+        margin-bottom: 10pt;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .menuMobile_LI {
+          color: $subMenuMobile;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .menuMobile_Title {
+      font-family: var(--font-poppins);
+      font-weight: 500;
+      height: 40pt;
+      font-size: 13pt;
+      color: $black-hard;
+    }
+
+    .menuMobile_Content2 {
+      width: 90%;
+      height: 70pt;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .menuMobile_openDream {
+      width: 100%;
+      height: 50pt;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 30pt 0;
+    }
+
+    .menuMobile_End {
+      width: 100%;
+      height: 50pt;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 20pt;
+
+      .menuMobile_help {
+        width: 50%;
+        color: $subMenuMobile;
+        font-size: 11pt;
+      }
+
+      .menuMobile_lenguage {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .menuMobile_lenguage_select {
+          display: flex;
+          color: $hard-black;
+          font-weight: 500;
+
+        }
+      }
+    }
+  }
+}

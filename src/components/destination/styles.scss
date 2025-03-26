@@ -1,0 +1,21 @@
+@import '../../styles/global';
+
+.physic,
+.virtual,
+.sucursal {
+  display: flex;
+  flex-direction: column;
+  min-height: 43px;
+  border: 1px solid $gray_01;
+  margin-bottom: 13px;
+  padding: 0 13px;
+  justify-content: center;
+}
+
+.destination_physic,
+.destination_virtual,
+.destination_sucursal {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}

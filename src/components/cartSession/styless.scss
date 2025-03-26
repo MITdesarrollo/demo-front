@@ -1,0 +1,44 @@
+@import '../../styles/global';
+
+.cart_content_info_session {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 337px;
+  background-color: $ultraWhite;
+  margin-bottom: 23px;
+
+  .cart_content_info_session_account {
+    .btn_create,
+    .btn_login {
+      font-family: var(--font-raleway);
+      width: 50%;
+      height: 43px;
+      cursor: pointer;
+      border: 1px solid $bg-error;
+      color: $bg-error;
+      background: transparent;
+    }
+
+    .btn_login.active {
+      background: $gradient-primary;
+      color: $white;
+      border: none;
+    }
+
+    .btn_create.active {
+      background: $gradient-primary;
+      color: $white;
+      border: none;
+    }
+
+    .btn_create:focus,
+    .btn_create:active,
+    .btn_login:focus,
+    .btn_login:active {
+      background: $gradient-primary;
+      color: $white;
+      border: none;
+    }
+  }
+}

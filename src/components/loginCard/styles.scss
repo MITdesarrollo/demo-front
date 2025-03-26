@@ -1,0 +1,72 @@
+@import '../../styles/global';
+
+.option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 23px;
+  justify-content: space-between;
+
+  .option_important {
+    height: 31px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22px 0 13px 0;
+    line-height: 17px;
+
+    .option_important_text {
+      color: $gray;
+      font-family: var(--font-raleway);
+    }
+  }
+
+  .option_forgetPass {
+    font-size: 11px;
+    color: $link;
+    cursor: pointer;
+    margin: 12px 0 21px 0;
+    font-family: var(--font-raleway);
+  }
+
+  input {
+    background-color: #f7f7f7;
+    height: 43px;
+    border: none;
+    padding-left: 13px;
+  }
+
+  input::placeholder {
+    color: $gray;
+  }
+
+  .input01 {
+    margin-bottom: 13px;
+  }
+
+  .option_btnSend {
+    height: 43px;
+    background: $gradient-primary;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+    font-size: 13px;
+  }
+
+  .option_info {
+    font-size: 11px;
+    color: $gray;
+    margin: 13px 0;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-raleway);
+
+    span {
+      cursor: pointer;
+      color: $link;
+      margin-left: 3px;
+    }
+  }
+}

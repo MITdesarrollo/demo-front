@@ -1,0 +1,23 @@
+@import '../../../../styles/global';
+
+.cartIconContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.cartItemCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: $bg-error;
+  color: white;
+
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-family: var(--font-poppins);
+}

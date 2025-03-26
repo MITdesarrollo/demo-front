@@ -1,0 +1,88 @@
+@import '../../../styles/global';
+
+.reciverMobile {
+  .reciverMobile_section {
+    .reciverMobile_content {
+      margin-top: 15px;
+
+      .giftMadeMobile_Content_image {
+        background-color: $gray;
+        width: 342px;
+        height: 207.32px;
+        object-fit: cover;
+      }
+
+      h3 {
+        font-size: 18px;
+        color: $black-hard;
+        width: 342px;
+        font-family: var(--font-poppins);
+        font-weight: 500;
+      }
+    }
+
+    .reciverMobile_content_info_location {
+      display: flex;
+      flex-direction: row;
+      height: 20px;
+      align-items: center;
+      margin: 8px 0;
+
+      p {
+        color: $bg-error;
+        font-size: 11pt;
+        margin-left: 5px;
+        font-family: var(--font-poppins);
+      }
+    }
+
+    .reciverMobile_Content_info_capacity {
+      height: 17px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .info_capacityContent {
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        font-size: 11pt;
+        margin-left: 6px;
+        color: $black-hard;
+        font-family: var(--font-poppins);
+      }
+    }
+
+    .reciverMobile_Content_info_code {
+      // height: 17px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 10pt 0;
+      font-family: var(--font-poppins);
+      font-weight: 500;
+
+      p {
+        font-size: 11pt;
+        color: $black-hard;
+        font-weight: 500;
+      }
+    }
+
+    .reciverMobile_section_price {
+      color: $black-hard;
+      font-size: 16px;
+      margin: 10pt 0;
+      font-weight: 500;
+      font-family: var(--font-poppins);
+    }
+
+    .reciverMobile_section_btn {
+      margin-bottom: 50pt;
+    }
+  }
+}

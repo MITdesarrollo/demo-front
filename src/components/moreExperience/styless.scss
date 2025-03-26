@@ -1,0 +1,43 @@
+@import '../../styles/global';
+
+.moreExp {
+  height: 146px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .moreExp_Title,
+  .moreExp_contact_info {
+    color: $soft-black;
+    letter-spacing: normal;
+  }
+
+  .moreExp_Title {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+  }
+
+  .moreExp_contact {
+    display: flex;
+    flex-direction: row;
+
+    &_info {
+      font-size: 11px;
+      margin-left: 10.24px;
+      font-family: var(--font-poppins);
+      font-weight: 500;
+
+      span {
+        color: $bg-error;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .moreExp_info {
+    font-size: 11px;
+    color: $bg-error;
+    font-family: var(--font-poppins);
+  }
+}

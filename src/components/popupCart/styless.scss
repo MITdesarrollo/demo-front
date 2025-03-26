@@ -1,0 +1,144 @@
+@import '../../styles/global';
+
+.popupCart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  max-width: 80%;
+  height: 80%;
+  background-color: $white;
+  overflow-y: auto;
+
+  .popupCart {
+    &_addCart {
+      margin: 23px;
+      border-bottom: 1px solid $border-two;
+
+      &_title {
+        height: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &_header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          h3 {
+            color: $soft-black;
+            margin-left: 8.53px;
+            letter-spacing: normal;
+            font-family: var(--font-poppins);
+            font-weight: 500;
+          }
+        }
+      }
+
+      &_content {
+        width: 100%;
+        // height: 169.37px;
+        display: flex;
+        flex-direction: row;
+        margin: 14px 0 20px 0;
+
+        @media (max-width: 769px) {
+          flex-direction: column;
+        }
+
+        &_image {
+          background-color: $gray;
+          margin-right: 23.36px;
+        }
+
+        &_info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h3,
+          p {
+            color: $soft-black;
+            font-family: var(--font-poppins);
+            letter-spacing: normal;
+          }
+
+          h3 {
+            font-weight: 500;
+          }
+
+          &_location {
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+            align-items: center;
+
+            p {
+              color: $bg-error;
+              font-size: 11px;
+              margin-left: 5px;
+            }
+          }
+
+          &_capacity {
+            height: 17px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            p {
+              font-size: 11px;
+              margin-left: 6px;
+              font-weight: 500;
+            }
+          }
+
+          &_amount {
+            font-size: 11px;
+            margin-left: 21.5px;
+            font-weight: 500;
+          }
+
+          &_texts {
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 769px) {
+              flex-direction: row;
+              justify-content: space-between;
+            }
+          }
+
+          &_btns {
+            margin-top: 10px;
+            &_01,
+            &_02 {
+              width: 180px;
+              height: 43px;
+              cursor: pointer;
+
+              @media (max-width: 769px) {
+                width: 100%;
+                margin-bottom: 10px;
+              }
+            }
+
+            &_01 {
+              background: $gradient-primary;
+              color: $white;
+              margin-right: 20px;
+              border: none;
+            }
+
+            &_02 {
+              background: transparent;
+              color: $bg-error;
+              border: 1px solid $bg-error;
+            }
+          }
+        }
+      }
+    }
+  }
+}

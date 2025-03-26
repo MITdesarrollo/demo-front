@@ -1,0 +1,155 @@
+@import '../../styles/global';
+
+.howToWork {
+  width: 100%;
+  height: auto;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .stepByStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .stepTitle {
+      font-family: "Poppins", sans-serif;
+      color: $soft-black;
+      letter-spacing: 6.5px;
+      font-weight: 500;
+      font-size: 13px;
+      margin: 109.11px 0 13px 0;
+      height: 30px;
+
+    }
+
+    .stepSubTitle {
+      font-family: var(--font-poppins);
+      font-size: 30px;
+      color: $soft-black;
+      font-weight: 500!important;
+      letter-spacing: 1px!important;
+      height: 43px;
+      margin-bottom: 21px;
+    }
+
+    .stepInfoContent {
+      color: $soft-black;
+      width: 929.12px;
+      height: 51.84px;
+      text-align: center;
+      line-height: 1.7;
+      font-family: var(--font-raleway);
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+
+
+  .threeSteps {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 104.16px 0 142px 0;
+
+    .stepOne,
+    .stepTwo,
+    .stepThree {
+      width: 269px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+
+      p,
+      h3 {
+        color: $soft-black;
+      }
+
+      .titleStep {
+        height: 50.63px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 13.37px;
+        font-family: var(--font-poppins);
+      }
+
+      .subTitleStep {
+        height: 47.29px;
+        margin-bottom: 26.47px;
+        font-family: var(--font-raleway);
+        font-size: 16px;
+      }
+
+      .moreInfo {
+        height: 22.29px;
+        margin-bottom: 19.64px;
+      }
+
+      .btn {
+        width: 179px;
+        height: 43px;
+        background: transparent;
+        border: 1px solid #ed8067;
+        color: $bg-error;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .howToWork {
+    padding: 0 37px;
+
+    .stepByStep {
+      .stepTitle {
+        width: 100%;
+        text-align: center;
+      }
+
+      .stepSubTitle {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 25pt;
+      }
+
+      .stepInfoContent {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+
+    .threeSteps {
+      width: 100%;
+      margin: 0;
+      flex-direction: column;
+      align-items: center;
+
+      .stepOne,
+      .stepTwo,
+      .stepThree {
+        width: 100%;
+
+        .stepsContent {
+          width: 100%;
+          background-color: $ultraWhite;
+          padding: 50px 37px;
+          box-shadow: $box-shadow;
+        }
+
+        .subTitleStep {
+          line-height: 2;
+        }
+      }
+    }
+  }
+}

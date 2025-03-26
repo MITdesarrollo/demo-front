@@ -1,0 +1,29 @@
+@import '../../../../styles/global';
+
+.footerMobile_section {
+  min-width: 360px;
+  border-bottom: 1px solid $border;
+
+  .footerMobile_section_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 17.5px 0;
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .footerMobile_ul {
+    list-style: none;
+    margin-bottom: 40px;
+
+    .footerMobile_li {
+      color: $title;
+      font-size: 13px;
+      line-height: 2;
+      padding-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../styles/global';
+
+.dreamonList {
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: $white;
+  height: auto;
+
+  .btnFormat {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    .back,
+    .next {
+      height: 19px;
+      color: $white;
+      background: none;
+      border: none;
+      padding: 0 30px;
+      cursor: pointer;
+    }
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 484px;
+
+    .chooseImg {
+      transition: all 0.5s linear;
+      width: 100%;
+      height: auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+    }
+
+    .textInfo {
+      width: 100%;
+      height: 100%;
+      background-color: $black-cover;
+      padding: 30px 0 0 30px;
+
+      .categorie {
+        font-family: var(--font-poppins);
+        font-size: 24px;
+      }
+
+      .destiny {
+        font-family: "Playfair Display", serif;
+        font-weight: var(--font-weight-regular);
+        font-style: italic;
+        font-size: 20px;
+      }
+    }
+
+    .textInfo:hover {
+      background-color: transparent;
+      color: $soft-black;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dreamonList {
+    .imgContainer {
+      flex-direction: row;
+    }
+
+    .imgContainer {
+      width: 100%;
+
+      .chooseImg {
+        min-width: 100%;
+      }
+    }
+  }
+}

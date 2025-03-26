@@ -1,0 +1,124 @@
+@import '../../../../styles/global';
+
+.reciverCard-container{
+  display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 769px) {
+    flex-direction: column;
+  }
+}
+.confirm-step2{
+  max-width: 250px;
+  @media (max-width: 768px) {
+    max-width: 100%; 
+  }
+}
+.reciverCard {
+  gap: 40px;
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
+  .reciverCard_img {
+    object-fit: cover;
+  }
+
+  .step2_content {
+    
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    // width: 300px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .step2_content_info {
+      .step2_infoTitle {
+        color: $soft-black;
+        font-size: 16px;
+        margin-bottom: 11px;
+        font-weight: 500;
+        font-family: var(--font-poppins);
+      }
+
+      .step2_imgInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .step2_infoCapacity,
+      .step2_infoCalendar {
+        color: $soft-black;
+        font-size: 11px;
+        font-family: var(--font-poppins);
+        margin-left: 7px;
+        font-weight: 500;
+      }
+    }
+
+    .step2_reciverInfo {
+      font-family: var(--font-poppins);
+      .step2_reciverInfo_title {
+        color: $soft-black;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .step2_reciverCode {
+        color: $orange;
+        margin-bottom: 11px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+.step2_infoGeneral {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: $ultraWhite;
+  padding: 20px;
+  font-family: var(--font-poppins);
+
+  .step2_infoGeneral_title {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0;
+    color: $soft-black;
+    font-family: var(--font-poppins);
+  }
+
+  .step2_infoGeneral_contact,
+  .step2_infoGeneral_info {
+    font-size: 11px;
+    font-family: var(--font-poppins)!important;
+  }
+
+  .step2_infoGeneral_info {
+    color: $bg-error !important;
+  }
+}
+
+.reciverCard_infoSection {
+  width: 90%;
+  margin-bottom: 100px;
+}

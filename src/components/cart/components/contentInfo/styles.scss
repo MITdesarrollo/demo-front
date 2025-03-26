@@ -1,0 +1,19 @@
+@import '../../../../styles/global';
+
+.cart_content_info {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 106px;
+
+  .terminosYCondiciones {
+    color: $soft-black;
+    font-size: 13px;
+    font-family: var(--font-poppins);
+  }
+
+  .cart_content_info_package {
+    margin-bottom: 23px;
+    min-height: 418px;
+    background-color: $ultraWhite;
+  }
+}

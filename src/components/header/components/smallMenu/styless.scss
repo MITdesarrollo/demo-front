@@ -1,0 +1,44 @@
+@import '../../../../styles/global';
+
+.smallMenuHeader {
+  top: 100%;
+  z-index: 1000;
+  min-width: 186px;
+}
+
+.smallMenu {
+  margin-top: 5px;
+  background-color: $ultraWhite;
+  padding: 11px 21px;
+
+  .smallMenu_ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .smallMenu_ul_li {
+      font-family: var(--font-poppins);
+      font-size: 13px;
+      font-weight: 500;
+      height: 30px;
+      // cursor: pointer;
+      color: $soft-black;
+      display: flex;
+      align-items: center;
+
+      &.clickable {
+        cursor: pointer;
+
+        &:hover {
+          color: $link;
+        }
+      }
+
+      &:not(.clickable) {
+        cursor: default;
+      }
+    }
+  }
+}

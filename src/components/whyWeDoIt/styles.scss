@@ -1,0 +1,136 @@
+@import '../../styles/global';
+
+.whyWeDoItContainer {
+  background-color: $white;
+  width: 100%;
+  height: auto;
+  color: $soft-black;
+
+  .insideSlice {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+
+    .sliceImage {
+      width: 50%;
+      display: grid;
+      justify-items: center;
+    }
+
+    .sliceContent {
+      width: 50%;
+      padding: 0 50px;
+
+      .content {
+        width: 444px;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .titleContentWhy {
+          font-family: var(--font-poppins);
+          color: $soft-black;
+          letter-spacing: 6.5px;
+          font-weight: 500;
+          font-size: 13px;
+        }
+
+        .subTitleContentWhy {
+          font-family: "Poppins", sans-serif!important;
+          font-size: 30px;
+          color: $soft-black;
+          font-weight: 400!important;
+          letter-spacing: 1px!important;
+
+          @media screen and (max-width: 768px) {
+            margin-top: 10px;
+          }
+
+        }
+
+        .infoContentWhy {
+          color: $black;
+          line-height: 1.7;
+          font-family: var(--font-raleway);
+          font-size: 16px;
+
+          // mobile media query 
+          @media screen and (max-width: 768px) {
+            margin-top: 10px;
+            line-height: 1.9;
+          }
+        }
+        .infoDosWhy {
+          color: $black;
+          font-weight: 500;
+          font-family: var(--font-raleway);
+
+          // mobile media query 
+          @media screen and (max-width: 768px) {
+            margin-top: 10px;
+            line-height: 1.9;
+          }
+        }
+
+        .btnContent {
+          background: $gradient-primary;
+          color: $white;
+          width: 142px;
+          height: 43px;
+          margin: 50px 20px 40px 0;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .choseTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titleContent {
+      color: $soft-black;
+      letter-spacing: 6.5px;
+      font-weight: 500;
+    }
+
+    .subTitleContent {
+      color: $soft-black;
+      line-height: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whyWeDoItContainer {
+
+    .insideSlice {
+      .sliceImage {
+        display: none;
+      }
+
+      .sliceContent {
+        padding: 50px 50px 0 50px;
+        display: flex;
+        text-align: center;
+
+        width: 100%;
+
+        .content {
+          padding: 0;
+          width: unset;
+          height: unset;
+          align-items: center;
+        }
+      }
+    }
+
+  }
+}

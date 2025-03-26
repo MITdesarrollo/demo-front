@@ -1,0 +1,44 @@
+//Primary colors
+$white: #f7f7f7;
+$orange: #F09580;
+$soft-white: #f4f4f4;
+$ultraWhite: #fff;
+$shadow: #0000000f;
+$soft-black: #262633;
+$black: #20202b;
+$hard-black: #1a1a1a;
+$black-hard: #262633;
+$header-black: rgba(38, 38, 51, 0.9);
+$gray_01: #e4e3e2;
+$title: #f5f5f5;
+$link: #ecbf52;
+$black-cover: rgba(38, 38, 51, 0.4);
+$bg-input: rgba(247, 247, 247, 0.4);
+$bg-error: #ed8067;
+$gray: #8b8b8b;
+$border: rgb(196, 196, 196, 0.1);
+$border-two: rgb(196, 196, 196, 0.3);
+$border-check: #c4c4c4;
+$confirm: #21c14b;
+$pending: #ff3636;
+$switch-unselect-yellow: #ecbe5241;
+$switch-unselect-orange: #ed806741;
+$beige: #ffe5a7;
+$subMenuMobile: #616161;
+$msg_success: #b2f8e2;
+$msg_error: #ffbaaa;
+$msg_warning: #ffe5a7;
+$msg_info: #0090ff;
+
+//gradietns
+$gradient-primary: linear-gradient(
+  253deg,
+  rgba(237, 128, 103, 1) 0%,
+  rgba(236, 145, 97, 1) 25%,
+  rgba(236, 178, 86, 1) 50%,
+  rgba(236, 191, 82, 1) 75%
+);
+
+//shadow
+$shadow-card: 0px 2px 48px rgba(0, 0, 0, 0.06);
+$box-shadow: 0px 5px 6px #00000029;

@@ -1,0 +1,63 @@
+@import '../../styles/global';
+
+.favPackMobile {
+  .favPackMobile_section {
+    .favPackMobile_infoTitle {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 24px 0 20px 0;
+
+      .favPackMobile_title {
+        color: $black-hard;
+        font-size: 16pt;
+      }
+    }
+
+    .favPackMobile_info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .favPackMobile_nameLocation {
+        color: $bg-error;
+      }
+
+      .favPackMobile_maxNum {
+        color: $black-hard;
+      }
+    }
+
+    .favPackMobile_selectOptions {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .favPackMobile_selectOptions_mx {
+        color: $soft-black;
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+
+      .favPackMobile_selectCant {
+        width: 115px;
+      }
+    }
+
+    .favPackMobile_price {
+      color: $soft-black;
+      font-size: 16pt;
+      font-weight: 500;
+      font-family: var(--font-poppins);
+      margin: 30px 0;
+    }
+
+    .favPackMobile_btn {
+      width: 100%;
+    }
+  }
+}

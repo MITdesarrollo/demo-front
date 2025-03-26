@@ -1,0 +1,85 @@
+@import '../../styles/global';
+
+.filterConfiguration {
+  width: 282.74px;
+  height: fit-content;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+
+  .filterDestination,
+  .filterCategorie,
+  .filterPrice,
+  .filterDate {
+    margin: 0 20px 20px 20px;
+
+    p {
+      color: $soft-black;
+      margin-bottom: 17.79px;
+      font-size: 13px;
+    }
+
+    .selectFilter {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      .labelCheck {
+        display: block;
+        position: relative;
+        color: $gray;
+        font-size: 12px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        .inputCheck {
+          cursor: pointer;
+          margin: 5.83px 5.83px 5.83px 0;
+          width: 13px;
+          height: 12px;
+          appearance: none;
+          background-color: transparent;
+          border: 1px solid $border-check;
+          border-radius: 4px;
+          display: grid;
+          place-content: center;
+
+          &::before {
+            content: '';
+            width: 9px;
+            height: 8px;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            box-shadow: inset 1em 1em $bg-error;
+            border-radius: 3px;
+          }
+
+          &:checked::before {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
+    .selectFilterPrice {
+      color: $bg-error;
+      font-size: 12px;
+    }
+  }
+
+  .filterBtn {
+    margin-left: 20px;
+
+    .btn {
+      background: transparent;
+      border: none;
+      color: $link;
+      cursor: pointer;
+    }
+  }
+}

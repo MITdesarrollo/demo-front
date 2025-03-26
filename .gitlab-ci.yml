@@ -1,0 +1,5 @@
+variables:
+  DC_PROJECT_NAMESPACE: "dreamon"
+include:
+  - project: 'infratowertravel/pipeline-templates'
+    file: 'deploy-microfront.yml'

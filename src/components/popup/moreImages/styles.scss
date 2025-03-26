@@ -1,0 +1,59 @@
+@import '../../../styles/global';
+
+.moreImages {
+  width: 1055px;
+  height: 644px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  background-color: #fff;
+  padding: 25px;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+  }
+
+  .moreImages_close {
+    cursor: pointer;
+  }
+
+  .moreImages_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .moreImages_list {
+      display: flex;
+      flex-direction: column;
+      max-height: 594px;
+      overflow-y: auto;
+      overflow: auto;
+
+      .moreImages_img {
+        margin: 5px 0;
+        cursor: pointer;
+      }
+
+      &::-webkit-scrollbar {
+        width: 0px; // Ancho del scrollbar (0px desaparece a la vista)
+      }
+    }
+  }
+}
+
+#splide01-list {
+  width: 90vw !important;
+  height: 256px;
+  @media (min-width: $breakpoint-tablet) {
+    height: 100%;
+  }
+}
+
+.moreImages_img {
+  width: 100% !important;
+  object-fit: cover;
+}

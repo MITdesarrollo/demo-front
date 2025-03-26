@@ -1,0 +1,119 @@
+@import '../../../../styles/global';
+
+.cart_resumen {
+  width: 100%;
+  max-width: 800px;
+  min-height: 484px;
+  height: fit-content;
+  background-color: $ultraWhite;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  // only desktop width 280px
+  @media (min-width: 1096px) {
+    width: 280px;
+    padding: 10px;
+  }
+
+  .resumen_title,
+  .resumen_infoTitle,
+  .resumen_infoQuant,
+  .resumen_subTotal,
+  .resumen_send,
+  .resumen_sendValue,
+  .resumen_creditUser,
+  .resumen_creditUserValue,
+  .resumen_infoImportant,
+  .resumen_total,
+  .resumen_totalValue,
+  .resumen_terminosYCondiciones {
+    color: $soft-black;
+    font-size: 11px;
+    font-family: var(--font-poppins);
+  }
+
+  .resumen_title {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  .resumen_subTotal {
+    font-weight: 500;
+  }
+
+  .info01,
+  .info02,
+  .info03,
+  .info04 {
+    width: 100%;
+    // padding: 10px 0;
+    // margin-bottom: 10px;
+  }
+
+  .info01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .info01_title {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+    }
+  }
+
+  .info02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info03_credit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .resumen_creditUserValue {
+      border: 1px solid $border-check;
+      border-radius: 6px;
+      padding: 1px 10px;
+      text-align: right;
+      font-weight: 500;
+    }
+  }
+
+  .resumen_infoImportant {
+    color: $bg-error;
+    margin-top: 10px;
+  }
+
+  .info04_total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .resumen_totalValue {
+      text-align: right;
+      font-size: 16px;
+      color: $bg-error;
+      font-weight: 500;
+    }
+  }
+
+  .terminosYCondiciones {
+    color: $soft-black;
+    font-size: 11px;
+    font-family: var(--font-poppins);
+  }
+  .cart_resumen_border {
+    border-bottom: 1px solid $border-two;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/global';
+
+.footerMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #262633;
+  width: 100%;
+  padding: 50px 0 100px 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+
+  .footerMobile_logo {
+    padding-bottom: 50px;
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $border;
+  }
+
+  &_linkText {
+    text-decoration: none;
+    color: $gray_01;
+    font-family: var(--font-raleway);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.22px;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $link;
+    }
+  }
+}

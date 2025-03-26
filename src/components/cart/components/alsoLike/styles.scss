@@ -1,0 +1,101 @@
+@import '../../../../styles/global';
+
+.alsoLike {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  padding: 0 1rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 2rem auto;
+  }
+
+  .alsoLike_title01 {
+    color: $soft-black;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+  }
+
+  .alsoLike_maybe {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // This centers the children on mobile
+    gap: 1rem;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch; // Reset alignment for tablet and above
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .alsoLike_item {
+    background-color: $white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%; // Ensure full width on mobile
+    max-width: 350px; // Limit width to maintain readability
+
+    @media (min-width: $breakpoint-tablet) {
+      max-width: none; // Remove max-width constraint for larger screens
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .alsoLike_item_content {
+      padding: 1rem;
+    }
+
+    .alsoLike_title02 {
+      color: $soft-black;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .alsoLike_location {
+      color: $bg-error;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .alsoLike_price {
+      font-weight: 500;
+      font-size: 1.125rem;
+      color: $soft-black;
+      margin-top: 0.5rem;
+    }
+
+    .alsoLike_heart {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      padding: 0.25rem;
+      cursor: pointer;
+    }
+  }
+}

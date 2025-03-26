@@ -1,0 +1,62 @@
+@import '../../styles/global';
+
+.data {
+  width: 352px;
+  height: 482.29px;
+
+  .perfilData {
+    height: 100%;
+    padding: 23px 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .perfilData_content_title {
+      letter-spacing: 1px;
+      font-family: var(--font-poppins);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .perfilData_content_title,
+    p {
+      color: $soft-black;
+    }
+  }
+
+  .perfilData_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .perfilData_content_sub {
+      margin: 22px 0;
+      font-size: 11px;
+      line-height: 17px;
+      font-family: var(--font-poppins);
+      text-align: center;
+    }
+
+    .perfilData_info {
+      width: 100%;
+
+      .perfilData_info_name,
+      .perfilData_info_lastName,
+      .perfilData_info_email,
+      .perfilData_info_pass {
+        height: 52px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border-check;
+
+        p {
+          font-family: var(--font-poppins);
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

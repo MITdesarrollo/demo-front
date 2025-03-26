@@ -1,0 +1,28 @@
+@import '../../../styles/global';
+
+.headerMobile {
+  width: 100%;
+  height: 82.01pt;
+  background-color: $soft-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .headerMobile_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+    .headerMobile_content_left {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .headerMobile_content_right {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

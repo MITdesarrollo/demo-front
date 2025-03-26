@@ -1,0 +1,29 @@
+@import '../../styles/global';
+
+.formRegister {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 22px;
+  grid-row-gap: 13px;
+
+  .input01_reg {
+    width: 100%;
+  }
+
+  .passwordToggle1 {
+    position: absolute;
+    top: 39%;
+    right: 227px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .passToggle2 {
+    position: absolute;
+    top: 39%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,100 @@
+@import '../../styles/global';
+
+.sliceGiver {
+  width: 100%;
+  height: 768px;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .sliceInfoGiver {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56.91px 139px;
+
+    .infoInsideSliceGiver {
+      margin-top: auto;
+      width: 536px;
+
+
+      .titleGiver {
+        font-family: var(--font-poppins);
+        color: $white;
+        letter-spacing: 6.5px;
+        font-weight: 400;
+        font-size: 13px;
+      }
+
+      .titleSliceGiver {
+        line-height: 1.5;
+        margin: 17px 0 10px 0;
+        font-family: var(--font-poppins);
+        font-weight: 400;
+        color: $white;
+        font-size: 40px!important;
+      }
+
+      .subTitleSliceGiver {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: var(--font-raleway);
+        color: $white;
+      }
+    }
+  }
+
+  .arrowDownGiver {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    color: white;
+
+    .arrowDown {
+      width: 22px;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .sliceGiver {
+    .sliceInfoGiver {
+      padding: 0 37pt;
+
+      .infoInsideSliceGiver {
+        width: 100%;
+        margin-top: 140px;
+
+        .titleGiver {
+          margin-bottom: 30pt;
+        }
+
+        .titleSliceGiver {
+          margin-bottom: 30pt;
+        }
+
+        .subTitleSliceGiver {
+          font-size: 20px;
+          line-height: 2;
+        }
+      }
+    }
+
+    .arrowDownGiver {
+      .arrowDown {
+        margin-bottom: 20pt;
+      }
+    }
+  }
+}

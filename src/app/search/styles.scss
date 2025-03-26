@@ -1,0 +1,118 @@
+@import '../../styles/global';
+
+.filter {
+  background-color: $white;
+
+  .sliceFilter {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .infoSliceFilter {
+      margin-bottom: 89.02px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-style: normal;
+      font-family: var(--font-poppins);
+
+      h1 {
+        width: 380.16px;
+        height: 38.96px;
+        text-align: center;
+        margin: 23.64px 0 19.57px 0;
+        font-weight: 500;
+      }
+
+      p {
+        height: 44.25px;
+        font-weight: 300;
+        font-family: var(--font-raleway);
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .setFilter {
+    background-color: $shadow;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .setFilter_noResults {
+      background-color: $white;
+      height: auto;
+      width: 813.55px;
+      margin-left: 32.21px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .setFilter_cards {
+      .infiniteScroll {
+        height: auto;
+        margin-left: 32.21px;
+        display: grid;
+        grid-template-columns: repeat(3, 259.8px);
+        grid-template-rows: repeat(3, 371.77px);
+        gap: 17.09px;
+      }
+    }
+  }
+
+  .filter_Carga {
+    background-color: $shadow;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter {
+    .setFilter {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .btnRadien {
+        width: 166px;
+        height: 50px;
+        position: fixed;
+        bottom: 20px;
+        font-size: 15px;
+      }
+
+      .setFilter_noResults {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .setFilter_cards {
+        .infiniteScroll {
+          margin-left: 0;
+          display: grid;
+          grid-template-columns: repeat(1, 259.8px);
+          grid-template-rows: repeat(1, 371.77px);
+          gap: 30pt;
+        }
+      }
+    }
+  }
+}

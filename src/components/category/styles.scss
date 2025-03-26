@@ -1,0 +1,79 @@
+@import '../../styles/global';
+
+.uniquePackage {
+  max-width: 1366px;
+  width: 100%;
+
+
+  margin-bottom: 42px;
+
+  .packagesInfo {
+    // width: 691px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: center;
+    // margin: 0 139px;
+
+    .allPackagesTitle,
+    .allPackagesDescription {
+      color: $soft-black;
+    }
+
+    .allPackagesTitle {
+      height: 43.29px;
+      margin-bottom: 29px;
+      font-family: "Poppins", sans-serif!important;
+      font-size: 30px;
+      color: $soft-black;
+      font-weight: 500!important;
+      letter-spacing: 1px!important;
+    }
+
+    .allPackagesDescription {
+      margin-bottom: 41.45px;
+      line-height: 1.7;
+      font-family: 'Raleway', sans-serif!important;
+      font-size: 16px;
+    }
+
+    .btnPackages {
+      width: 172px;
+      height: 43px;
+      background: $gradient-primary;
+      border: none;
+      cursor: pointer;
+      color: $white;
+      font-family: var(--font-poppins)
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .uniquePackage {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30pt;
+
+    .packagesInfo {
+      width: 100%;
+      padding: 0 20px;
+      margin: 0;
+
+      .allPackagesTitle {
+        margin-top: 30px;
+        font-size: 34px;
+      }
+
+      .allPackagesDescription {
+        font-size: 20px;
+      }
+
+      .btnPackages {
+        font-size: 15px;
+      }
+    }
+  }
+}
